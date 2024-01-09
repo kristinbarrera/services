@@ -1,0 +1,359 @@
+@import url('./fonts/fonts.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+ 
+    background: #0F0F0F;
+}
+header{
+        width: 100%;
+        padding: 5%;
+}
+.servicio{
+    width: 100%;
+    padding: 4%;
+    display: flex;
+
+
+}
+
+.first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+h1{
+   
+    text-align: center;
+    color:  #FCFCFC;
+    font-family: 'San Francisco-Bold';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.first-section h2{
+    color: var(--Neutros-Blanco, #FCFCFC);
+    font-family: 'San Francisco-SemiBold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.first-section p{
+ 
+    color: var(--Neutral-Blanco, #FCFCFC);
+    font-family: 'San Francisco-Light';
+    font-size: 8.411px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+
+}
+.img-section{
+        width: 50%;
+}
+
+.cta-buttons{
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+.cta-button{
+    display: flex;
+    height: 24.498px;
+    padding: 6.86px 13.719px;
+    justify-content: center;
+    align-items: center;
+    gap: 4.555px;
+    border-radius: 13.665px;
+    background: var(--Main-Principal, #3F56CC);
+
+    color: var(--Neutral-Blanco, #FCFCFC);
+    font-family: 'San Francisco-Regular';
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.benefits-button{
+    display: flex;
+    width: 93px;
+    height: 25px;
+    padding: 6.86px 13.719px;
+    justify-content: center;
+    align-items: center;
+    gap: 4.555px;
+    border-radius: 13.665px;
+    border: 0.455px solid var(--Main-Terciario, #BDC0E7);
+   background: none;
+   cursor: pointer; 
+
+}
+.principal-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-buttons a{
+    text-decoration: none;
+    list-style: none;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+}
+.popup-content{
+    display: flex;
+    padding: 10px 13px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--Neutros-Blanco, #FCFCFC);
+}
+.popup-content h2{
+    color: var(--Neutros-Blanco, #FCFCFC);
+    font-family: 'San Francisco-SemiBold';
+    font-size: 16.748px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.titulo-benefits{
+    width: 100%;
+    padding: 2%;
+}
+.titulo-benefits h2{
+   
+    font-size: 24px;
+   
+}
+.benefits-popup{
+    display: none;
+    
+    flex-direction: column;
+    width: 100%;
+    padding: 4%;
+        
+}
+.benefits-popup-reporte{
+    display: none;
+    
+    flex-direction: column;
+    width: 100%;
+    padding: 4%;
+}
+
+.benefit-item{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1%;
+}
+.icono{
+    width: 8%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.beneficio{
+    width: 80%;
+    display: flex;
+   
+    flex-direction: column;
+}
+element.style{
+    display: flex;
+    flex-direction: column;
+}
+.beneficio p{
+    color: var(--Neutros-Blanco, #FCFCFC);
+    font-family: San Francisco-Regular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.icono img{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 50%;
+    transition: transform 0.3s ease;
+}
+
+
+.descripcion {
+    color: var(--Neutros-Blanco, #FCFCFC);
+    font-family: 'San Francisco-Light';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    margin-top: 10px;
+    display: none;
+    padding:1%;
+}
+
+/*post */
+.post-section{
+    
+    padding: 4%;
+}
+.post-section h2{
+    color: var(--Neutros-Blanco, #FCFCFC);
+    font-family: 'San Francisco-SemiBold';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+.img-UI{
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    color: var(--Neutros-Blanco, #FCFCFC);
+    font-family: 'San Francisco-SemiBold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+.titulo p{
+    color: var(--Neutral-Blanco, #FCFCFC);
+    font-family: 'San Francisco-Light';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.cta-buttons-p{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+}
+.cta-button-po{
+    width: 40%;
+    display: flex;
+    height: 36px;
+    padding: 6.86px 13.719px;
+    justify-content: center;
+    align-items: center;
+    gap: 4.555px;
+    border-radius: 13.665px;
+    background: var(--Main-Principal, #3F56CC);
+
+    color: var(--Neutral-Blanco, #FCFCFC);
+    font-family: 'San Francisco-Regular';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cta-button-po{
+    
+    text-decoration: none;
+}
+.benefits-button-p{
+    display: flex;
+    width: 40%;
+    height: 36px;
+    padding: 6.86px 13.719px;
+    justify-content: center;
+    align-items: center;
+    gap: 4.555px;
+    border-radius: 13.665px;
+    border: 0.455px solid var(--Main-Terciario, #BDC0E7);
+   background: none;
+   cursor: pointer; 
+   text-decoration: none;
+   color: var(--Neutral-Blanco, #FCFCFC);
+   font-family: 'San Francisco-Regular';
+   font-size: 10px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+
+}
+
+.first-post{
+    display: flex;
+
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .img-section{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .principal-section{
+        width: 80%;
+    }
+    .servicio {
+        
+        display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .cta-buttons {
+      flex-direction: row;
+    }
+    .cta-buttons-po{
+        height: 100%;
+    }
+    
+    body{
+        display: flex;
+        flex-direction:  column;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+   
+    .cta-button,
+    .benefits-button {
+      width: 40%;
+      
+      
+    }
+    .left-section {
+      gap: 20px;
+    }
+  }

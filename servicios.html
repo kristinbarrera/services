@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="servicios.css">
+
+    <script src="beneficio.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Servicios</h1>
+    </header>
+
+    <section class="principal-section">
+        <div class="servicio">
+            <div class="left-section">
+                <div class="first-section">
+                    <h2>Auditoría UX</h2>
+                    <p>Dirigido a aquellos que ya cuentan con un producto digital, nuestro servicio de Auditoría UX/UI
+                        está
+                        diseñado para optimizar la interfaz y la experiencia del usuario.</p>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="https://wa.link/b1dbfe" class="cta-button">Solicitar Servicios</a>
+                    <a href="javascript:void(0);" class="cta-button benefits-button" onclick="toggleBenefitsPopup('auditoria')">Ver Beneficios</a>
+
+                </div>
+            </div>
+
+            <div class="img-section">
+                <img src="/img/auditoria.svg" alt="Imagen de ejemplo">
+            </div>
+
+
+        </div>
+        <div class="benefits-popup" id="benefits-popup-auditoria">
+            <div class="popup-content">
+                <div class="titulo-benefits">
+                    <h2>Beneficios</h2>
+                </div>
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Análisis Visual y UX</p>
+                        <div class="descripcion" style="display: none;">
+                            - Evaluación detallada de la interfaz desde una perspectiva visual UI y de experiencia del
+                            usuario UX.
+                            <br><br>
+                            - Evaluación de la estructura de navegación, flujos de usuario y otros elementos clave de
+                            UX.
+                        </div>
+
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>identificación y Definición de Problemas</p>
+                        <div class="descripcion" style="display: none;">
+                            - Uso de métricas como tasas de rebote y análisis de datos analíticos (si están disponibles) para identificar problemas potenciales
+                            <br><br>
+                            - Recopilación de feedback del usuario a través de pruebas de usuario, encuestas o comentarios directos.
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Priorización de Problemas</p>
+                        <div class="descripcion" style="display: none;">
+                            - Clasificación de los problemas identificados según su gravedad y su impacto en la experiencia del usuario.
+                            <br><br>
+                            - Identificación de áreas clave que requieren atención inmediata
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Propuestas de Soluciones</p>
+                        <div class="descripcion" style="display: none;">
+                            - Recomendaciones específicas y detalladas para abordar cada problema identificado.
+                            
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>iteración Basada en Feedback</p>
+                        <div class="descripcion" style="display: none;">
+                            - Sesiones de revisión y ajustes según la retroalimentación del cliente.
+                            <br><br>
+                            - Garantía de que el diseño visual cumple con las expectativas.
+                           
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Sesiones de Asesoría</p>
+                        <div class="descripcion" style="display: none;">
+                            -  Realizaremos reuniones clave para establecer objetivos, revisar avances, ajustar el trabajo según tus preferencias
+                            
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Chat disponible 24/7</p>
+                        <div class="descripcion" style="display: none;">
+                            -   Contarás con nuestro Chat 24/7 para cualquier duda/consulta
+                            
+                        </div>
+                    </div>
+                    <div class="icono" id="ver-mas" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <section class="principal-section">
+        <div class="servicio">
+            <div class="img-section">
+                <img src="/img/reporte.svg" alt="Imagen de ejemplo">
+            </div>
+            <div class="left-section">
+
+
+                
+
+                <div class="first-section">
+                    <h2>Reporte UX</h2>
+                    <p>Dirigido para aquellos que están dando sus primeros pasos en su producto digital o recién
+                        empezando</p>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="https://wa.link/oa0ryr" class="cta-button">Solicitar Servicios</a>
+                    <a href="javascript:void(0);" class="cta-button benefits-button" onclick="toggleBenefitsPopup('reporte')">Ver Beneficios</a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+        <div class="benefits-popup" id="benefits-popup-reporte">
+            <div class="popup-content">
+                <div class="titulo-benefits">
+                    <h2>Beneficios</h2>
+                </div>
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Descripción del Proyecto</p>
+                        <div class="descripcion" style="display: none;">
+                            - Contextualización de la idea del cliente y sus objetivos.
+                           
+                        </div>
+
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Resumen Ejecutivo</p>
+                        <div class="descripcion" style="display: none;">
+                            - Breve descripción de los objetivos del informe.
+                           
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Análisis de la Idea Existente</p>
+                        <div class="descripcion" style="display: none;">
+                            - Evaluación de la idea actual desde la perspectiva de la UX.
+                            <br><br>
+                            - Identificación de puntos fuertes y áreas de mejora.
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Investigación de Usuario</p>
+                        <div class="descripcion" style="display: none;">
+                            - Realización de estudios de usuarios para comprender sus necesidades y comportamientos.
+                            <br><br>
+                            - Creación de personas y escenarios de usuario. (User Personas)
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Benchmarking</p>
+                        <div class="descripcion" style="display: none;">
+                            - Análisis competitivo para identificar mejores prácticas en tu sector.
+                           
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Diseño de Flujos de Usuario:</p>
+                        <div class="descripcion" style="display: none;">
+                            - Creación de flujos de usuario  para la navegación garantizando una optima experiencia de usuario. El resultado debe ser una navegación simple e intuitiva
+                           
+                           
+                        </div>
+                    </div>
+                    <div class="icono" id="ver-mas" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>iteración Basada en Feedback</p>
+                        <div class="descripcion" style="display: none;">
+                            - Sesiones de revisión y ajustes según la retroalimentación del cliente.
+                            <br><br>
+                            - Garantía de que el diseño visual cumple con las expectativas.
+                           
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Sesiones de Asesoría </p>
+                        <div class="descripcion" style="display: none;">
+                            -  Realizaremos reuniones clave para establecer objetivos, revisar avances, ajustar el trabajo según tus preferencias
+                           
+                           
+                        </div>
+                    </div>
+                    <div class="icono" id="ver-mas" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Chat disponible 24/7</p>
+                        <div class="descripcion" style="display: none;">
+                            -  Contarás con nuestro Chat 24/7 para cualquier duda/consulta
+                           
+                           
+                        </div>
+                    </div>
+                    <div class="icono" id="ver-mas" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="principal-section">
+        <div class="servicio">
+            <div class="left-section">
+                <div class="first-section">
+                    <h2>Mejora Diseño(UI)</h2>
+                    <p>Dirigido para aquellos que buscan mejorar el aspecto visual de su interfaz de usuario, centrándose en la estética y la apariencia visua</p>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="https://wa.link/wfrvo2" class="cta-button">Solicitar Servicios</a>
+                    <a href="javascript:void(0);" class="cta-button benefits-button" onclick="toggleBenefitsPopup('diseño')">Ver Beneficios</a>
+
+                </div>
+            </div>
+
+            <div class="img-section">
+                <img src="/img/design.svg" alt="Imagen de ejemplo">
+            </div>
+
+
+        </div>
+        <div class="benefits-popup" id="benefits-popup-diseño">
+            <div class="popup-content">
+                <div class="titulo-benefits">
+                    <h2>Beneficios</h2>
+                </div>
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Análisis Visual</p>
+                        <div class="descripcion" style="display: none;">
+                            - Evaluación detallada del diseño actual desde la perspectiva visual.
+                            <br><br>
+                            - Identificación de áreas para mejorar la estética y el atractivo visual.
+                        </div>
+
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Propuestas de Diseño</p>
+                        <div class="descripcion" style="display: none;">
+                            - Desarrollo de propuestas visuales para mejorar la interfaz de usuario.
+                            <br><br>
+                            - Inclusión de elementos de diseño modernos y atractivos.
+                            <br><br>
+                            - Paleta de Colores y Tipografía.
+                            <br><br>
+                            - Selección de una paleta de colores armoniosa y tipografía atractiva.
+                            <br><br>
+                            - Alineación de elementos visuales con la identidad de la marca.
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Refinamiento de Elementos Visuales</p>
+                        <div class="descripcion" style="display: none;">
+                            - Mejora de iconos, botones y otros elementos visuales.
+                            <br><br>
+                            - Aseguramiento de consistencia en todo el diseño.
+                           
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Prototipos de Alta Fidelidad</p>
+                        <div class="descripcion" style="display: none;">
+                            - Creación de prototipos visuales detallados para mostrar el nuevo diseño.
+                            <br><br>
+                            - Inclusión de elementos interactivos para visualizar la experiencia del usuario.
+                           
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Diseño Responsivo</p>
+                    </div>
+                    <div class="icono" id="ver-mas" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>iteración Basada en Feedback</p>
+                        <div class="descripcion" style="display: none;">
+                            - Sesiones de revisión y ajustes según la retroalimentación del cliente.
+                            <br><br>
+                            - Garantía de que el diseño visual cumple con las expectativas.
+                           
+                        </div>
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+
+
+               
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Sesiones de Asesoría </p>
+                        <div class="descripcion" style="display: none;">
+                            -  Realizaremos reuniones clave para establecer objetivos, revisar avances, ajustar el trabajo según tus preferencias
+                           
+                           
+                        </div>
+                    </div>
+                    <div class="icono" id="ver-mas" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+
+                    </div>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Chat disponible 24/7</p>
+                        <div class="descripcion" style="display: none;">
+                            -  Contarás con nuestro Chat 24/7 para cualquier duda/consulta
+                           
+                           
+                        </div>
+                    </div>
+                    <div class="icono" id="ver-mas"onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="post-section">
+        <h2>Si ya tienes tu reporte UX y deseas dar el siguiente paso</h2>
+       <div class="post-ui">
+        <div class="img-UI">
+            <img src="./img/post.svg">
+        </div>
+
+        <div class="first-post">
+            <div class="titulo">
+                Realización de Diseño(UI)
+                <p>Dirigido para quienes tienen/recibieron un reporte o auditoría ux</p>
+            </div>
+           
+            <div class="cta-buttons-p">
+                <a href="https://wa.link/06zltc" class="cta-button-po">Solicitar Servicios</a>
+                <a href="javascript:void(0);" class="cta-button benefits-button-p" onclick="toggleBenefitsPopup('post')">Ver Beneficios</a>
+
+            </div>
+
+        </div>
+
+        <div class="benefits-popup" id="benefits-popup-post">
+            <div class="popup-content">
+                <div class="titulo-benefits">
+                    <h2>Beneficios</h2>
+                </div>
+                <div class="benefit-item">
+                    <div class="icono">
+                        <img src="/img/check.svg" alt="check">
+                    </div>
+                    <div class="beneficio">
+                        <p>Evaluación del informe  UX/UI</p>
+                        <div class="descripcion" style="display: none;">
+                            - Evaluación de los hallazgos de la auditoría UX desde la perspectiva visual.
+                            <br><br>
+                            - Identificación de oportunidades para mejorar la estética y la coherencia visual.
+                        </div>
+
+                    </div>
+                    <div class="icono" onclick="toggleDescription(this)">
+                        <img src="/img/down.svg" alt="dropdown">
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+</body>
+
+</html>

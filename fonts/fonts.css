@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url('./pro/SF-Pro-Text-Heavy.otf');
+    type: 'opentype';
+    font-weight: 800;
+    font-style: normal
+}
+@font-face {
+    font-family: 'San Francisco-Bold';
+    src: url('./pro/SF-Pro-Text-Bold.otf');
+    type: 'opentype';
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face{
+    font-family: 'San Francisco-SemiBold';
+    src: url('./pro/SF-Pro-Text-Semibold.otf');
+    type: 'opentype';
+    font-weight: 500;
+    font-style: normal
+
+}
+@font-face {
+    font-family: 'San Francisco-Medium';
+    src: url('./pro/SF-Pro-Text-Medium.otf');
+    type: 'opentype';
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: 'San Francisco-Regular';
+    src: url('./pro/SF-Pro-Text-Regular.otf');
+    type: 'opentype';
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'San Francisco-Light';
+    src: url('./pro/SF-Pro-Text-Light.otf');
+    type: 'opentype';
+    font-weight: 200;
+    font-style: normal
+}
+
