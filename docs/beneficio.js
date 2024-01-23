@@ -10,7 +10,15 @@ function toggleBenefitsPopup(serviceType) {
     }
 }
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    const servicio = document.querySelectorAll(".servicio");
+  
+    servicio.forEach((servicio, index) => {
+      setTimeout(() => {
+        servicio.style.opacity = 1;
+      }, index * 1000); // Aparece uno por uno cada 500 milisegundos (ajusta según sea necesario)
+    });
+  });
 function toggleDescription(icon) {
     var description = icon.previousElementSibling.querySelector('.descripcion');
     var arrowIcon = icon.querySelector('img');

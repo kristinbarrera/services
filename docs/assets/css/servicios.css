@@ -16,7 +16,8 @@ header{
         padding: 5%;
 }
 .servicio{
-    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  transition: opacity 0.5s ease-in-out;
    
     width: 100%;
     padding: 4%;
@@ -39,7 +40,7 @@ h1{
     text-align: center;
     color:  #FCFCFC;
     font-family: 'San Francisco-Bold';
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -48,7 +49,7 @@ h1{
 .first-section h2{
     color: var(--Neutros-Blanco, #FCFCFC);
     font-family: 'San Francisco-SemiBold';
-    font-size: 20px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -58,7 +59,7 @@ h1{
  
     color: var(--Neutral-Blanco, #FCFCFC);
     font-family: 'San Francisco-Light';
-    font-size: 8.411px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -69,7 +70,10 @@ h1{
         display: flex;
         justify-content: center;
 }
-
+.img-section img{
+    width: 100%;
+    height: 100%;
+}
 .cta-buttons{
     display: flex;
     justify-content: center;
@@ -77,7 +81,8 @@ h1{
 }
 .cta-button{
     display: flex;
-    height: 24.498px;
+    width: 40%;
+    height: 32px;
     padding: 6.86px 13.719px;
     justify-content: center;
     align-items: center;
@@ -87,7 +92,7 @@ h1{
 
     color: var(--Neutral-Blanco, #FCFCFC);
     font-family: 'San Francisco-Regular';
-    font-size: 8px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -95,8 +100,8 @@ h1{
 
 .benefits-button{
     display: flex;
-    width: 93px;
-    height: 25px;
+    width: 40%;
+    height: 32px;
     padding: 6.86px 13.719px;
     justify-content: center;
     align-items: center;
@@ -262,7 +267,7 @@ element.style{
 .cta-buttons-p{
     display: flex;
     justify-content: center;
-    gap: 6px;
+    gap: 10px;
     width: 100%;
 }
 .cta-button-po{
@@ -280,7 +285,7 @@ element.style{
     font-family: 'San Francisco-Regular';
     font-size: 10px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -305,7 +310,7 @@ element.style{
    font-family: 'San Francisco-Regular';
    font-size: 10px;
    font-style: normal;
-   font-weight: 600;
+   font-weight: 500;
    line-height: normal;
 
 }
