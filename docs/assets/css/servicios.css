@@ -13,6 +13,7 @@ body{
 }
 header{
         width: 100%;
+        margin-top: 5%;
         padding: 5%;
 }
 .servicio{
@@ -24,7 +25,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    gap:20px;
 
 }
 
@@ -81,8 +82,8 @@ h1{
 }
 .cta-button{
     display: flex;
-    width: 40%;
-    height: 32px;
+    width: 45%;
+    height: 42px;
     padding: 6.86px 13.719px;
     justify-content: center;
     align-items: center;
@@ -92,7 +93,7 @@ h1{
 
     color: var(--Neutral-Blanco, #FCFCFC);
     font-family: 'San Francisco-Regular';
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -100,8 +101,8 @@ h1{
 
 .benefits-button{
     display: flex;
-    width: 40%;
-    height: 32px;
+    width: 45%;
+    height: 42px;
     padding: 6.86px 13.719px;
     justify-content: center;
     align-items: center;
@@ -225,7 +226,8 @@ element.style{
 
 /*post */
 .post-section{
-    
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     padding: 4%;
 }
 .post-section h2{
