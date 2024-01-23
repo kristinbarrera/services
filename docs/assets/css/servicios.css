@@ -26,6 +26,8 @@ header{
     flex-direction: column;
     align-items: center;
     gap:20px;
+    margin-bottom: 5%;
+
 
 }
 
@@ -225,26 +227,33 @@ element.style{
 }
 
 /*post */
+.post-ui{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
 .post-section{
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    margin-top: 5%;
     padding: 4%;
 }
 .post-section h2{
+    padding-bottom: 10%;
     color: var(--Neutros-Blanco, #FCFCFC);
     font-family: 'San Francisco-SemiBold';
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     text-align: center;
 }
 .img-UI{
-    padding: 4%;
+ 
     display: flex;
     justify-content: center;
 }
-
+.img-UI img{
+    width: 100%;
+}
 .titulo {
     color: var(--Neutros-Blanco, #FCFCFC);
     font-family: 'San Francisco-SemiBold';
