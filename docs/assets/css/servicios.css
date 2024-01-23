@@ -6,7 +6,8 @@
 }
 
 body{
-   
+    transition: background-color 0.5s ease;
+
  
     background: #0F0F0F;
 }
@@ -15,9 +16,13 @@ header{
         padding: 5%;
 }
 .servicio{
+    transition: opacity 0.3s ease-in-out;
+   
     width: 100%;
     padding: 4%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
 }
@@ -25,7 +30,8 @@ header{
 .first-section{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 12px;
 }
 h1{
@@ -59,12 +65,12 @@ h1{
 
 }
 .img-section{
-        width: 50%;
+        width: 100%;
 }
 
 .cta-buttons{
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
     gap: 6px;
 }
 .cta-button{
@@ -81,7 +87,7 @@ h1{
     font-family: 'San Francisco-Regular';
     font-size: 8px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -111,7 +117,8 @@ h1{
 .left-section{
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    text-align: center;
     gap: 20px;
 }
 .popup-content{
